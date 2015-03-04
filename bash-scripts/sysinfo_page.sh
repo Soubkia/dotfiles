@@ -111,6 +111,5 @@ fi
 echo "output file = $filename"
 
 
-# Write page (comment out until testing is complete)
-
-# write_page > $filename
+# Write page
+write_page > $filename
