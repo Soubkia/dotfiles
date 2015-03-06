@@ -2,6 +2,10 @@
 
 # sysinfo_page - A script to produce a system information HTML file
 
+#### Source Imports
+
+source error.sh
+
 ##### Constants
 
 TITLE="System Information for $HOSTNAME"
