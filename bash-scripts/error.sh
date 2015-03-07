@@ -2,11 +2,13 @@
 
 # error handling routine
 
+
 # I put a variable in my scripts named PROGNAME which
 # holds the name of the program being run.  You can get this
 # value from the first item on the command line ($0).
 
 PROGNAME=$(basename $0)
+
 
 error_exit()
 {
@@ -18,7 +20,7 @@ error_exit()
 #	----------------------------------------------------------------
 
 
-	echo "${PROGNAME}: ${1:-"Unknown Error"}" 1>&2
+	echo "\033[0;31m${PROGNAME}: ${1:-"Unknown Error"}\033[0m" 1>&2
 	exit 1
 }
 
